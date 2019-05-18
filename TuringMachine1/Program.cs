@@ -17,7 +17,17 @@ namespace TuringMachine1
             Console.WriteLine();
             Console.WriteLine(tape);
             Console.WriteLine();
-            Console.WriteLine(RunTuringMachine(tape,states));
+
+            try
+            {
+                Console.WriteLine(RunTuringMachine(tape, states));
+            }
+            catch (MissingStateException e)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(e.Message);
+            }
+            Console.ReadLine();
 
         }
 

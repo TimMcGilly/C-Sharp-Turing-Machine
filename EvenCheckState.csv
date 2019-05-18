@@ -1,0 +1,7 @@
+﻿StateNum,Condition,Write,Movement,NextState
+1,1,1,Right,2
+1,0,0,Right,1
+1, ,1,Right,0
+2,1,1,Right,1
+2,0,0,Right,1
+2, ,0,Right,0
